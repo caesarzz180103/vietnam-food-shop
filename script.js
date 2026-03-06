@@ -204,8 +204,11 @@ function renderProducts(lang) {
     const card = document.createElement("article");
     card.className = "product";
     card.style.animationDelay = `${0.08 * (index + 1)}s`;
+    const imageClass = product.image.endsWith(".svg")
+      ? "product__image--illustration"
+      : "";
     card.innerHTML = `
-      <img src="${product.image}" alt="${text.name}" loading="lazy" />
+      <img class="${imageClass}" src="${product.image}" alt="${text.name}" loading="lazy" />
       <div class="product__body">
         <h3 class="product__name">${text.name}</h3>
         <p class="product__meta">${text.desc}</p>

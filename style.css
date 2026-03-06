@@ -221,7 +221,14 @@ main {
   width: 100%;
   height: 188px;
   object-fit: cover;
+  object-position: center center;
   display: block;
+}
+
+.product img.product__image--illustration {
+  object-fit: contain;
+  background: var(--surface-soft);
+  padding: 0.5rem;
 }
 
 .product__body {
@@ -321,5 +328,9 @@ main {
 
   .product img {
     height: 172px;
+  }
+
+  .product img.product__image--illustration {
+    padding: 0.4rem;
   }
 }
