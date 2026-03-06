@@ -9,5 +9,4 @@
   <circle cx="600" cy="380" r="220" fill="#fff7eb"/>
   <circle cx="600" cy="380" r="188" fill="#ffcf95"/>
   <path d="M420 340 C520 420, 680 420, 780 340" stroke="#d97a22" stroke-width="16" fill="none"/>
-  <text x="600" y="130" text-anchor="middle" font-size="72" font-family="Arial, sans-serif" fill="#8a4512">Beef Pho</text>
 </svg>
