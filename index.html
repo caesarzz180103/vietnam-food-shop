@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>越南美食小铺</title>
+    <meta
+      id="meta-description"
+      name="description"
+      content="个人越南美食售卖页，展示图片、价格、库存与联系方式。"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="topbar">
+      <div class="topbar__inner">
+        <p class="topbar__brand" id="brand-name">VIET BITES</p>
+        <div class="topbar__actions">
+          <label class="language-switch">
+            <span class="sr-only" id="lang-label">选择语言</span>
+            <select id="lang-switch" aria-labelledby="lang-label">
+              <option value="zh-CN">中文</option>
+              <option value="vi-VN">Tiếng Việt</option>
+              <option value="en-US">English</option>
+            </select>
+          </label>
+          <a class="topbar__link" id="nav-contact-link" href="#contact">联系购买</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero__halo" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow" id="hero-eyebrow">个人精选 · Vietnam Kitchen</p>
+        <h1 id="hero-title">越南美食小铺<br />简洁下单，直接联系</h1>
+        <p class="hero__desc" id="hero-desc">
+          查看每款商品的图片、价格与可售数量。库存人工更新，下单前请先联系确认。
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" id="hero-primary-btn" href="#products">查看在售商品</a>
+          <a class="btn btn--ghost" id="hero-secondary-btn" href="#contact">联系我</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="products" class="section">
+        <div class="section__header">
+          <h2 id="products-title">在售商品</h2>
+          <p id="products-subtitle">每张卡片显示价格与可售数量。</p>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section__header">
+          <h2 id="contact-title">联系方式</h2>
+          <p id="contact-subtitle">优先微信联系，电话仅用于紧急确认。</p>
+        </div>
+        <div id="contact-card" class="contact__card"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p id="last-updated"></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
